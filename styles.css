@@ -89,7 +89,14 @@ width: 100%;
 .portfolio-item:hover img {
   transform: scale(1.05);
 }
-
+/* This ensures they stay hidden when the page loads */
+.info-box {
+  display: none; 
+  padding: 2rem;
+  background-color: #fafafa;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+}
 /* Style for the text boxes */
 .info-box {
   display: none; /* Hide them at the start */
