@@ -62,8 +62,7 @@
       <img src="images/me.png" alt="me">
     </div>
   </section>
-  <script>
-  // Select all buttons and all boxes
+ <script>
   const buttons = document.querySelectorAll('.filter-btn');
   const boxes = document.querySelectorAll('.info-box');
 
@@ -72,10 +71,11 @@
       // 1. Hide all boxes first
       boxes.forEach(box => box.style.display = 'none');
 
-      // 2. Get the text of the button (lowercase it to match our IDs)
-      const category = btn.textContent.toLowerCase();
+      // 2. Remove parentheses and spaces, then lowercase it
+      // This turns "(L)" into "l"
+      const category = btn.textContent.toLowerCase().replace('(', '').replace(')', '').trim();
 
-      // 3. If the button is "ME", "SCULPTURE", or "BOOKS", show that box
+      // 3. Show the target box
       const targetBox = document.getElementById('text-' + category);
       if (targetBox) {
         targetBox.style.display = 'block';
