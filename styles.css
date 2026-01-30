@@ -89,3 +89,19 @@ width: 100%;
 .portfolio-item:hover img {
   transform: scale(1.05);
 }
+
+/* Style for the text boxes */
+.info-box {
+  display: none; /* Hide them at the start */
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+/* A simple animation to make it smooth */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
