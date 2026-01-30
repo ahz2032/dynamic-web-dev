@@ -60,5 +60,26 @@
       <img src="images/me.png" alt="me">
     </div>
   </section>
+  <script>
+  // Select all buttons and all boxes
+  const buttons = document.querySelectorAll('.filter-btn');
+  const boxes = document.querySelectorAll('.info-box');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // 1. Hide all boxes first
+      boxes.forEach(box => box.style.display = 'none');
+
+      // 2. Get the text of the button (lowercase it to match our IDs)
+      const category = btn.textContent.toLowerCase();
+
+      // 3. If the button is "ME", "SCULPTURE", or "BOOKS", show that box
+      const targetBox = document.getElementById('text-' + category);
+      if (targetBox) {
+        targetBox.style.display = 'block';
+      }
+    });
+  });
+</script>
 </body>
 </html>
