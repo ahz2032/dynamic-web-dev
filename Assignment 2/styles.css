@@ -1,0 +1,33 @@
+/* add rules via selector and properties */
+/* we can use any html element as the selector */
+
+body{
+    background-color: gold;
+    height: 100px;
+}
+
+/* using element selections will grab all the elements on the webpage */
+
+p {
+    font-size: 24px;
+}
+
+/* we grab a class selectior by using . + classname */
+/* classes can be applied to multiple items */
+h1 {
+    font-size: 60px;
+  font-family: "Brush Script MT", Brush Script Std, cursive;
+}
+h2 {
+    font-size: 30px;
+    font-family: 'Noto Sans', sans-serif;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.blue-text{
+    color:black;
+}
