@@ -1,33 +1,75 @@
-/* add rules via selector and properties */
-/* we can use any html element as the selector */
-
-body{
-    background-color: gold;
-    height: 100px;
+body {
+    background-color: gold; /* Keeping your gold theme */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
 }
 
-/* using element selections will grab all the elements on the webpage */
+.poster-top {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px 20px 40px 20px;
+}
+
+h1 {
+    font-size: 60px; 
+    font-family: "Brush Script MT", cursive;
+    line-height: 0.9;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 60px; 
+    font-family: "Brush Script MT", cursive;
+    line-height: 0.9;
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 5px 0;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    padding: 5px;
+}
+
+.image-container {
+    width: 50%;
+    margin-top: 0; 
+    margin-bottom:40px;
+}
+
+.image-container img {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.content-text {
+    max-width: 550px;
+    margin: 0 auto; 
+    padding: 0 40px 100px 40px; 
+    text-align: center;
+}
 
 p {
     font-size: 24px;
-}
-
-/* we grab a class selectior by using . + classname */
-/* classes can be applied to multiple items */
-h1 {
-    font-size: 60px;
-  font-family: "Brush Script MT", Brush Script Std, cursive;
-}
-h2 {
-    font-size: 30px;
-    font-family: 'Noto Sans', sans-serif;
-}
-h3 {
-    font-size: 20px;
-    font-weight: 600;
+    line-height: 1.5;
+    margin: 20px 0;
     font-family: 'Noto Sans', sans-serif;
 }
 
-.blue-text{
-    color:black;
+.blue-text {
+    color: black;
 }
