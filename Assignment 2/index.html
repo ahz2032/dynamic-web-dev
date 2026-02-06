@@ -1,33 +1,30 @@
-/* add rules via selector and properties */
-/* we can use any html element as the selector */
+<html>
+    <head>
+        <title>☀️</title>
+        <!-- adding an external style sheet -->
+         <!-- link has 2 attributes: href, rel -->
+        <link rel="stylesheet" href="style.css"/>
+    </head>
 
-body{
-    background-color: gold;
-    height: 100px;
-}
+    <body>
+        <h1>Andean Carnival </h1>
+        <h2>With the Strenght of the Sun </h2>
 
-/* using element selections will grab all the elements on the webpage */
+         <h3> Arica, Chile </h3>
+         <h4> from Friday 30th of January to Sunday 1st of February </h4>
 
-p {
-    font-size: 24px;
-}
 
-/* we grab a class selectior by using . + classname */
-/* classes can be applied to multiple items */
-h1 {
-    font-size: 60px;
-  font-family: "Brush Script MT", Brush Script Std, cursive;
-}
-h2 {
-    font-size: 30px;
-    font-family: 'Noto Sans', sans-serif;
-}
-h3 {
-    font-size: 20px;
-    font-weight: 600;
-    font-family: 'Noto Sans', sans-serif;
-}
+         <div class="image-wrapper">
+            <img src="header.png" alt="Carnival Scene">
+        </div>
 
-.blue-text{
-    color:black;
-}
+
+        <p class="blue-text" id="hi">A festival that lasts for three consecutive days and brings together over 16,000 dancers and musicians from across Chile, Bolivia, and Peru. It represents a powerful fusion of Aymara, Quechua, and Afro-descendant traditions, celebrating the cultural identity of the triple-border region.</p>
+        <p class="blue-text" id="hello">The carnival transforms the streets of the border city of Arica into a giant stage. The parade route weaves through the city center and reaches its climax at a massive stage located at the foot of the iconic Morro de Arica, a historic coastal cliff that can be seen from everywhere in the small city.</p>
+        <p class="blue-text" id="howdy">More than just a party, the festival is a deep spiritual tribute to the Pachamama (Mother Earth) and the Tata Inti (Father Sun). It serves as a vital act of cultural preservation, ensuring that the indigenous and regional heritage of the Andes remains alive and thriving for future generations. It is a free event that attracts hundreds of thousands of spectators, the andean celebration then continues at the Carnival of Oruro.</p>
+
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+    </body>
+</html>
