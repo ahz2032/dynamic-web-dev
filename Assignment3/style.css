@@ -1,0 +1,137 @@
+body {
+    background-color: #121212;
+    color: #00f2ff;
+    font-family: "Courier New", Courier, monospace;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#now-playing {
+    font-weight: 400;  
+    font-size: 1.2rem; 
+    letter-spacing: 1px; 
+}
+
+.player-card {
+    border-radius: 15px;
+    text-align: center;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+    filter: invert(100%);
+}
+
+.station-item.loading {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* buttons */
+.station-item {
+    display: flex;
+    align-items: center;
+}
+
+.station-item .name {
+    font-weight: 500;
+    font-size: 1.0rem;
+    color: #00f2ff;
+    margin-bottom: 2px;
+}
+
+.station-item .tags {
+    font-size: 0.75rem;
+    color: #ff90fd;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* A simple pulse animation for the active station */
+.station-item.active .name::after {
+    content: " ●";
+    color: #f200ff;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* 3d model display
+.model-container {
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+    border: 1px solid #00f2ff;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.model-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+3d model display */
+
+
+/* button */
+.button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.terminal-button {
+    background: transparent;
+    color: #ff90fd;
+    border: none;
+    font-family: "Courier New", Courier, monospace;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    transition: opacity 0.2s;
+}
+
+.terminal-button:hover {
+    opacity: 0.7;
+    box-shadow: none;
+}
+
+/*visualizer container */
+.video-container {
+    width: 100%;
+    max-width: 450px;
+    height: 250px;
+    margin: 30px auto 0 auto;
+    border: 2px solid #00f2ff;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden; 
+    background: black;
+    display: block;
+}
+
+/* The Zoom logic */
+.video-container iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    transform: translate(-50%, -50%) scale(1.2);
+    border: none;
+    pointer-events: none;
+}
