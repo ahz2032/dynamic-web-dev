@@ -1,30 +1,63 @@
-<html>
-    <head>
-        <title>☀️</title>
-        <!-- adding an external style sheet -->
-         <!-- link has 2 attributes: href, rel -->
-        <link rel="stylesheet" href="style.css"/>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio web app</title>
+    <link rel="stylesheet" href="style.css">
+    
+<!-- radio 3d model -->
+    <!-- <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script> -->
+<!-- radio 3d model -->
 
-    <body>
-        <h1>Andean Carnival </h1>
-        <h2>With the Strenght of the Sun </h2>
+</head>
+<body>
+<div class="container">
+    <div class="player-card">
+        <h2 id="now-playing">Pick a station</h2>
+        <audio id="audio-player" controls></audio>
+    </div>
 
-         <h3> Arica, Chile </h3>
-         <h4> from Friday 30th of January to Sunday 1st of February </h4>
+    <ul id="station-list">
+        </ul>
+
+<!-- radio 3d model -->
+    <!-- <div class="model-container">
+        <iframe 
+            title="Harman Kardon SoundSticks II" 
+            frameborder="0" 
+            allowfullscreen 
+            mozallowfullscreen="true" 
+            webkitallowfullscreen="true" 
+            allow="autoplay; fullscreen; xr-spatial-tracking" 
+            xr-spatial-tracking 
+            execution-while-out-of-viewport 
+            execution-while-not-rendered 
+            web-share 
+            src="https://sketchfab.com/models/f3695a6bed774a4490de236c2b04b457/embed?autostart=1&ui_theme=dark&dnt=1"> 
+        </iframe>
+    </div> -->
+ <!-- radio 3d model -->
+
+ <!-- youtube video display -->
+
+<div class="video-container" id="viz-container">
+        <iframe 
+            id="viz-player" 
+            src="https://www.youtube.com/embed/ntyKbTLrfxE?autoplay=1&mute=1&loop=1&playlist=ntyKbTLrfxE&controls=0&disablekb=1&modestbranding=1" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media">
+        </iframe>
+    </div>
+
+    <div class="button-wrapper">
+        <button id="video-toggle" class="terminal-button">visualizer: ON</button>
+    </div>
+</div>
+
+<!-- youtube video display -->
 
 
-         <div class="image-wrapper">
-            <img src="header.png" alt="Carnival Scene">
-        </div>
-
-
-        <p class="blue-text" id="hi">A festival that lasts for three consecutive days and brings together over 16,000 dancers and musicians from across Chile, Bolivia, and Peru. It represents a powerful fusion of Aymara, Quechua, and Afro-descendant traditions, celebrating the cultural identity of the triple-border region.</p>
-        <p class="blue-text" id="hello">The carnival transforms the streets of the border city of Arica into a giant stage. The parade route weaves through the city center and reaches its climax at a massive stage located at the foot of the iconic Morro de Arica, a historic coastal cliff that can be seen from everywhere in the small city.</p>
-        <p class="blue-text" id="howdy">More than just a party, the festival is a deep spiritual tribute to the Pachamama (Mother Earth) and the Tata Inti (Father Sun). It serves as a vital act of cultural preservation, ensuring that the indigenous and regional heritage of the Andes remains alive and thriving for future generations. It is a free event that attracts hundreds of thousands of spectators, the andean celebration then continues at the Carnival of Oruro.</p>
-
-        <div class="parent">
-            <div class="child"></div>
-        </div>
-    </body>
+    <script src="main.js"></script>
+</body>
 </html>
