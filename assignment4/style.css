@@ -1,0 +1,56 @@
+body{
+    background-color: ivory ;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+p {
+    font-size: 24px;
+}
+
+.wish-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#well {
+  width: fit-content;
+  border: 15px solid white;
+  padding: 50px;
+  margin: 20px auto;
+  /* if wishes accumulate you can scroll down */
+  overflow-x: auto;
+  /* keeps text art */
+  white-space: pre; 
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+div input {
+    display: block;
+    margin: 10px auto;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column; /* Stacks inputs vertically */
+    gap: 10px;              /* Adds space between them */
+    width: 300px;           /* Gives them a uniform width */
+    align-items: center;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
